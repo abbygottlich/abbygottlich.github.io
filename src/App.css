@@ -1,33 +1,98 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main {
   display: flex;
-  flex-direction: column;
+  height: 620px;
+  background-image: url("background-darker\ 1.jpg");
+  background-size: cover;
+}
+
+.header {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
+  width: 100%;
+  z-index: 1;
+}
+
+.logo {
+  width: 240px;
+  height: 170px;
+  background-image: url("logo.svg");
+  background-size: 280px;
+  background-repeat: no-repeat;
+  margin-top: -80px;
+}
+
+.logo:hover {
+  cursor: pointer;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+  margin-right: 50px;
+}
+
+.nav-text {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: "Avenir";
+  font-size: 14px;
+  letter-spacing: 2px;
+  transition: color 1s;
+}
+
+.nav-text:hover {
+  color: #000000;
+  cursor: pointer;
+}
+
+.development {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  width: 50%;
+  background-color: #0000ee;
+  opacity: 0.8;
+  transition: opacity 1s;
 }
 
-.App-link {
-  color: #61dafb;
+.development:hover {
+  opacity: 1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.development-text {
+  font-family: "Menlo";
+  font-size: 30px;
+  color: #ffffff;
+}
+
+.development-text:hover {
+  cursor: pointer;
+}
+
+.design {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  background-color: rgb(184,188,0,0.8);
+  transition: background-color 1s;
+}
+
+.design:hover {
+  background-color: rgb(184,188,0,1);
+}
+
+.design-text {
+  width: 250px;
+  height: 250px;
+  background-image: url("design-text.svg");
+  background-size: 250px;
+  background-repeat: no-repeat;
+}
+
+.design-text:hover {
+  cursor: pointer;
 }
