@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import './App.css';
-import { BrowserRouter, Route } from "react-router-dom";
+import { BrowserRouter, Route, Link } from "react-router-dom";
 import Development from "./components/Development"
 
 class App extends Component {
   render() {
+    const blank = {}
     return (
       <BrowserRouter>
         <div className="App">
@@ -18,8 +19,10 @@ class App extends Component {
               </div>
             </div>
             <div className="development">
-              <div className="development-text">&lt;Development /&gt;</div>
-              <Route path="/development" component={Development} />
+              <Route exact path="/" component={blank}>
+                <Link exact className="development-text" to="/development">&lt;Development /&gt; </Link>
+              </Route>
+              <Route exact path="/development" component={Development} />
             </div>
             <div className="design">
               <div className="design-text"></div>
