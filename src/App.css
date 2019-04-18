@@ -41,6 +41,7 @@
   font-size: 14px;
   letter-spacing: 2px;
   transition: color 1s;
+  text-decoration: none;
 }
 
 .nav-text:hover {

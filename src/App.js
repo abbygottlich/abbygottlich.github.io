@@ -1,21 +1,21 @@
 import React, { Component } from 'react';
 import './App.css';
-import Header from "./components/Header"
+import { BrowserRouter, Route } from "react-router-dom";
+
+import Home from "./components/Home";
+import About from "./components/About";
+import Contact from "./components/Contact";
+import Header from "./components/Header";
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <div className="main">
-          <Header />
-          <div className="development">
-            <div exact className="development-text" to="/development">&lt;Development /&gt; </div>
-          </div>
-          <div className="design">
-            <div className="design-text"></div>
-          </div>
-        </div>
-      </div>
+      <BrowserRouter>
+        <Header />
+        <Route exact path="/" component={Home} />
+        <Route path="/about" component={About} />
+        <Route path="/contact" component={Contact} />
+      </BrowserRouter>
     );
   }
 }
