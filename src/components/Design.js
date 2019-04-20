@@ -23,8 +23,6 @@ class Design extends Component {
             return (
                 <div>
                     <div>link 1</div>
-                    <div>link 2</div>
-                    <div>link 3</div>
                 </div>
             )
         } else {
@@ -35,7 +33,10 @@ class Design extends Component {
     render() {
         return (
             <div className="design">
-                <div className="design-text" onClick={() => { this.toggleHandler() }} >{this.showDesignLinks()}</div>
+                <div className="design-content">
+                    <div className="design-title" onClick={() => { this.toggleHandler() }} ></div>
+                    <div className="design-links">{this.showDesignLinks()}</div>
+                </div>
             </div>
         );
     }

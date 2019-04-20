@@ -23,10 +23,6 @@
   margin-top: -80px;
 }
 
-.logo:hover {
-  cursor: pointer;
-}
-
 .nav {
   display: flex;
   justify-content: space-between;
@@ -46,7 +42,6 @@
 
 .nav-text:hover {
   color: #000000;
-  cursor: pointer;
 }
 
 .development {
@@ -63,14 +58,20 @@
   opacity: 1;
 }
 
-.development-text {
-  font-family: "Menlo";
-  font-size: 30px;
-  color: #ffffff;
+.development-title {
+  width: 347px;
+  height: 38px;
+  background-image: url("development-title.png");
+  background-size: 347px;
+  background-repeat: no-repeat;
 }
 
-.development-text:hover {
-  cursor: pointer;
+.development-links {
+  text-align: center;
+  font-family: "Menlo";
+  font-size: 20px;
+  color: #ffffff;
+  margin-top: 15px;
 }
 
 .design {
@@ -86,14 +87,21 @@
   background-color: rgb(184,188,0,1);
 }
 
-.design-text {
-  width: 250px;
-  height: 250px;
-  background-image: url("design-text.svg");
-  background-size: 250px;
+.design-title {
+  width: 150px;
+  height: 95px;
+  background-image: url("design-title.png");
+  background-size: 140px;
   background-repeat: no-repeat;
 }
 
-.design-text:hover {
+.design-links {
+  text-align: center;
+  font-family: "Raleway";
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.logo:hover, .nav-text:hover, .development-title:hover, .development-links:hover, .design-title:hover {
   cursor: pointer;
 }

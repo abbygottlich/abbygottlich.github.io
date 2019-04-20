@@ -23,8 +23,6 @@ class Development extends Component {
             return (
                 <div>
                     <div>link 1</div>
-                    <div>link 2</div>
-                    <div>link 3</div>
                 </div>
             )
         } else {
@@ -35,7 +33,10 @@ class Development extends Component {
     render() {
         return (
             <div className="development">
-                <div className="development-text" onClick={() => { this.toggleHandler() }} >&lt;Development /&gt;  {this.showDevelopmentLinks()}</div>
+                <div className="development-content">
+                    <div className="development-title" onClick={() => { this.toggleHandler() }}></div>
+                    <div className="development-links">{this.showDevelopmentLinks()}</div>
+                </div>
             </div>
         );
     }
