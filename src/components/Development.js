@@ -5,6 +5,7 @@ class Development extends Component {
     state = {
         toggle: false
     }
+
     toggleHandler() {
         if (this.state.toggle === false) {
             this.setState({
@@ -16,6 +17,7 @@ class Development extends Component {
             })
         }
     }
+
     showDevelopmentLinks() {
         if (this.state.toggle === true) {
             return (

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Development from "./Development";
 import Design from "./Design";
 
-class About extends Component {
+class Home extends Component {
     render() {
         return (
             <div className="App">
@@ -15,4 +15,4 @@ class About extends Component {
     }
 }
 
-export default About;
+export default Home;
