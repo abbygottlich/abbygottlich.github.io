@@ -79,20 +79,31 @@
   justify-content: center;
   align-items: center;
   width: 50%;
-  background-color: rgb(184,188,0,0.8);
-  transition: background-color 1s;
+  background-color: #B8BC00;
+  opacity: 0.8;
+  transition: opacity 1s;
 }
 
 .design:hover {
-  background-color: rgb(184,188,0,1);
+  opacity: 1;
 }
 
 .design-title {
-  width: 150px;
+  position: sticky;
+  top: 0;
+  width: 344px;
   height: 95px;
-  background-image: url("design-title.png");
-  background-size: 140px;
+  background-image: url("design-text.png");
+  background-size: 344px;
   background-repeat: no-repeat;
+  background-color: #B8BC00;
+  margin: auto;
+  margin-bottom: 15px;
+}
+
+.design-content {
+  width: 100%;
+  max-height: 380px;
 }
 
 .design-links {
@@ -102,6 +113,25 @@
   color: #ffffff;
 }
 
-.logo:hover, .nav-text:hover, .development-title:hover, .development-links:hover, .design-title:hover {
+.design-projects {
+  height: 400px;
+  overflow: scroll;
+}
+
+.single-project {
+  margin-bottom: 10px;
+}
+
+.cover-image {
+  width: 260px;
+  height: 185px;
+  background-image: url("naked-travel-cover.png");
+  background-size: 260px;
+  background-repeat: no-repeat;
+  margin: auto;
+}
+
+.logo:hover, .nav-text:hover, .development-title:hover, .development-links:hover,
+.design-title:hover, .design-projects {
   cursor: pointer;
 }

@@ -21,8 +21,23 @@ class Design extends Component {
     showDesignLinks() {
         if (this.state.toggle === true) {
             return (
-                <div>
-                    <div>link 1</div>
+                <div className="design-projects">
+                    <div className="single-project">
+                        <div className="design-links">NakedTravel</div>
+                        <div className="cover-image"></div>
+                    </div>
+                    <div className="single-project">
+                        <div className="design-links">NakedTravel</div>
+                        <div className="cover-image"></div>
+                    </div>
+                    <div className="single-project">
+                        <div className="design-links">NakedTravel</div>
+                        <div className="cover-image"></div>
+                    </div>
+                    <div className="single-project">
+                        <div className="design-links">NakedTravel</div>
+                        <div className="cover-image"></div>
+                    </div>
                 </div>
             )
         } else {
