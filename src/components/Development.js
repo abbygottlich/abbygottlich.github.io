@@ -22,7 +22,8 @@ class Development extends Component {
         if (this.state.toggle === true) {
             return (
                 <div>
-                    <div>link 1</div>
+                    <a className="dev-link-text" href="http://abbygottlich.dev/feast-finder-app/" target="blank">feast-finder-app</a>
+                    <span class="cursor">|</span>
                 </div>
             )
         } else {
