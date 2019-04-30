@@ -33,7 +33,9 @@ class Design extends Component {
 
     showProjectModal() {
         if (this.state.modalToggle === true) {
-            return <div className="modal-content">hello</div>
+            return <div className="modal-content">
+                <div onClick={() => { this.modalToggle() }} className="x"></div>
+            </div>
         } else return null
     }
 
