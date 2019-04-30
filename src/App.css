@@ -1,7 +1,7 @@
 .main {
   display: flex;
   height: 620px;
-  background-image: url("background-darker\ 1.jpg");
+  background-image: url("background-4.jpg");
   background-size: cover;
 }
 
@@ -49,8 +49,8 @@
   justify-content: center;
   align-items: center;
   width: 50%;
-  background-color: #0000ee;
-  opacity: 0.8;
+  background-color: #B8BC00;
+  opacity: 0.85;
   transition: opacity 1s;
 }
 
@@ -79,8 +79,8 @@
   justify-content: center;
   align-items: center;
   width: 50%;
-  background-color: #B8BC00;
-  opacity: 0.8;
+  background-color: #ff6839;
+  opacity: 0.85;
   transition: opacity 1s;
 }
 
@@ -96,7 +96,6 @@
   background-image: url("design-text.png");
   background-size: 344px;
   background-repeat: no-repeat;
-  background-color: #B8BC00;
   margin: auto;
   margin-bottom: 15px;
 }
@@ -114,12 +113,24 @@
 }
 
 .design-projects {
-  height: 400px;
+  width: 350px;
+  height: 310px;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
   overflow: scroll;
 }
 
 .single-project {
-  margin-bottom: 10px;
+  margin-bottom: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.single-project:hover {
+  background-color: #9a431f;
 }
 
 .cover-image {
