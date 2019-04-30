@@ -144,6 +144,7 @@ to { opacity: 0; }
   padding-top: 20px;
   padding-bottom: 20px;
   overflow: scroll;
+  z-index: 1;
 }
 
 .single-project {
@@ -165,6 +166,17 @@ to { opacity: 0; }
   background-size: 260px;
   background-repeat: no-repeat;
   margin: auto;
+}
+
+.modal {
+  position: fixed;
+  z-index: 2;
+}
+
+.modal-content {
+  width: 100px;
+  height: 100px;
+  background-color: red;
 }
 
 .logo:hover, .nav-text:hover, .development-title:hover, .development-links:hover,

@@ -33,30 +33,32 @@ class Design extends Component {
 
     showProjectModal() {
         if (this.state.modalToggle === true) {
-            return <div>hello</div>
+            return <div className="modal-content">hello</div>
         } else return null
     }
 
     showDesignLinks() {
         if (this.state.toggle === true) {
             return (
-                <div className="design-projects">
-                    <div onClick={() => { this.modalToggle() }} className="single-project">
-                        <div>{this.showProjectModal()}</div>
-                        <div className="design-links">NakedTravel</div>
-                        <div className="cover-image"></div>
-                    </div>
-                    <div className="single-project">
-                        <div className="design-links">NakedTravel</div>
-                        <div className="cover-image"></div>
-                    </div>
-                    <div className="single-project">
-                        <div className="design-links">NakedTravel</div>
-                        <div className="cover-image"></div>
-                    </div>
-                    <div className="single-project">
-                        <div className="design-links">NakedTravel</div>
-                        <div className="cover-image"></div>
+                <div>
+                    <div className="modal">{this.showProjectModal()}</div>
+                    <div className="design-projects">
+                        <div onClick={() => { this.modalToggle() }} className="single-project">
+                            <div className="design-links">NakedTravel</div>
+                            <div className="cover-image"></div>
+                        </div>
+                        <div className="single-project">
+                            <div className="design-links">NakedTravel</div>
+                            <div className="cover-image"></div>
+                        </div>
+                        <div className="single-project">
+                            <div className="design-links">NakedTravel</div>
+                            <div className="cover-image"></div>
+                        </div>
+                        <div className="single-project">
+                            <div className="design-links">NakedTravel</div>
+                            <div className="cover-image"></div>
+                        </div>
                     </div>
                 </div>
             )
