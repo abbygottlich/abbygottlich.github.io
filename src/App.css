@@ -1,7 +1,7 @@
 .main {
   display: flex;
   height: 620px;
-  background-image: url("background-4.jpg");
+  background-image: url("background.jpg");
   background-size: cover;
 }
 

@@ -3,7 +3,8 @@ import React, { Component } from 'react';
 class Design extends Component {
 
     state = {
-        toggle: false
+        toggle: false,
+        modalToggle: false
     }
 
     toggleHandler() {
@@ -18,11 +19,30 @@ class Design extends Component {
         }
     }
 
+    modalToggle() {
+        if (this.state.modalToggle === false) {
+            this.setState({
+                modalToggle: true
+            })
+        } else {
+            this.setState({
+                modalToggle: false
+            })
+        }
+    }
+
+    showProjectModal() {
+        if (this.state.modalToggle === true) {
+            return <div>hello</div>
+        } else return null
+    }
+
     showDesignLinks() {
         if (this.state.toggle === true) {
             return (
                 <div className="design-projects">
-                    <div className="single-project">
+                    <div onClick={() => { this.modalToggle() }} className="single-project">
+                        <div>{this.showProjectModal()}</div>
                         <div className="design-links">NakedTravel</div>
                         <div className="cover-image"></div>
                     </div>
