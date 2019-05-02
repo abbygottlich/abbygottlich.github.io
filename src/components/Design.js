@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
 import NakedTravelModal from "./NakedTravelModal";
 import AviateModal from "./AviateModal";
+import AlexModal from "./AlexModal";
 
 class Design extends Component {
 
     state = {
         toggle: false,
         nakedTravelModalToggle: false,
-        aviateModalToggle: false
+        aviateModalToggle: false,
+        alexModalToggle: false
     }
 
     toggleHandler() {
@@ -46,6 +48,18 @@ class Design extends Component {
         }
     }
 
+    alexModalToggle() {
+        if (this.state.alexModalToggle === false) {
+            this.setState({
+                alexModalToggle: true
+            })
+        } else {
+            this.setState({
+                alexModalToggle: false
+            })
+        }
+    }
+
     showNakedTravelModal() {
         if (this.state.nakedTravelModalToggle === true) {
             return <NakedTravelModal />
@@ -58,12 +72,19 @@ class Design extends Component {
         } else return null
     }
 
+    showAlexModal() {
+        if (this.state.alexModalToggle === true) {
+            return <AlexModal />
+        } else return null
+    }
+
     showDesignLinks() {
         if (this.state.toggle === true) {
             return (
                 <div>
                     <div className="modal">{this.showNakedTravelModal()}</div>
                     <div className="modal">{this.showAviateModal()}</div>
+                    <div className="modal">{this.showAlexModal()}</div>
                     <div className="design-projects">
                         <div onClick={() => { this.nakedTravelModalToggle() }} className="single-project">
                             <div className="design-links">NakedTravel</div>
@@ -73,7 +94,7 @@ class Design extends Component {
                             <div className="design-links">Aviate</div>
                             <div className="aviate-cover-image"></div>
                         </div>
-                        <div className="single-project">
+                        <div onClick={() => { this.alexModalToggle() }} className="single-project">
                             <div className="design-links">Alex Campaign</div>
                             <div className="alex-campaign-cover-image"></div>
                         </div>
