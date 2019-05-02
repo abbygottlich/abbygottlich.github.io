@@ -8,10 +8,11 @@
 .header {
   position: absolute;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   width: 100%;
   z-index: 1;
+  margin-top: 20px;
 }
 
 .logo {
@@ -20,14 +21,20 @@
   background-image: url("logo.svg");
   background-size: 280px;
   background-repeat: no-repeat;
-  margin-top: -80px;
+  margin-top: -90px;
+  margin-right: 500px;
+  margin-left: -20px;
+}
+
+.nav-and-menu {
+  display: flex;
+  margin-left: 180px;
 }
 
 .nav {
   display: flex;
   justify-content: space-between;
   width: 300px;
-  margin-right: 50px;
 }
 
 .nav-text {
@@ -42,6 +49,19 @@
 
 .nav-text:hover {
   color: #000000;
+}
+
+.menu {
+  float: right;
+  width: 35px;
+  height: 35px;
+  border: none;
+  background-image: url("./menu.svg");
+  background-repeat: no-repeat;
+  background-size: 35px;
+  background-color: transparent;
+  cursor: pointer;
+  visibility: hidden;
 }
 
 .development {
