@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import NakedTravelModal from "./NakedTravelModal";
 import AviateModal from "./AviateModal";
+import ElmCreekModal from "./ElmCreekModal";
 import AlexModal from "./AlexModal";
 
 class Design extends Component {
@@ -9,7 +10,8 @@ class Design extends Component {
         toggle: false,
         nakedTravelModalToggle: false,
         aviateModalToggle: false,
-        alexModalToggle: false
+        alexModalToggle: false,
+        elmCreekToggle: false
     }
 
     toggleHandler() {
@@ -24,6 +26,7 @@ class Design extends Component {
         }
     }
 
+    // NakedTravel functions
     nakedTravelModalToggle() {
         if (this.state.nakedTravelModalToggle === false) {
             this.setState({
@@ -36,6 +39,13 @@ class Design extends Component {
         }
     }
 
+    showNakedTravelModal() {
+        if (this.state.nakedTravelModalToggle === true) {
+            return <NakedTravelModal />
+        } else return null
+    }
+
+    // Aviate functions
     aviateModalToggle() {
         if (this.state.aviateModalToggle === false) {
             this.setState({
@@ -48,6 +58,32 @@ class Design extends Component {
         }
     }
 
+    showAviateModal() {
+        if (this.state.aviateModalToggle === true) {
+            return <AviateModal />
+        } else return null
+    }
+
+    // Elm Creek Functions
+    elmCreekModalToggle() {
+        if (this.state.elmCreekToggle === false) {
+            this.setState({
+                elmCreekToggle: true
+            })
+        } else {
+            this.setState({
+                elmCreekToggle: false
+            })
+        }
+    }
+
+    showElmCreekModal() {
+        if (this.state.elmCreekToggle === true) {
+            return <ElmCreekModal />
+        } else return null
+    }
+
+    // Alex functions
     alexModalToggle() {
         if (this.state.alexModalToggle === false) {
             this.setState({
@@ -60,23 +96,12 @@ class Design extends Component {
         }
     }
 
-    showNakedTravelModal() {
-        if (this.state.nakedTravelModalToggle === true) {
-            return <NakedTravelModal />
-        } else return null
-    }
-
-    showAviateModal() {
-        if (this.state.aviateModalToggle === true) {
-            return <AviateModal />
-        } else return null
-    }
-
     showAlexModal() {
         if (this.state.alexModalToggle === true) {
             return <AlexModal />
         } else return null
     }
+
 
     showDesignLinks() {
         if (this.state.toggle === true) {
@@ -84,6 +109,7 @@ class Design extends Component {
                 <div>
                     <div className="modal">{this.showNakedTravelModal()}</div>
                     <div className="modal">{this.showAviateModal()}</div>
+                    <div className="modal">{this.showElmCreekModal()}</div>
                     <div className="modal">{this.showAlexModal()}</div>
                     <div className="design-projects">
                         <div onClick={() => { this.nakedTravelModalToggle() }} className="single-project">
@@ -94,13 +120,13 @@ class Design extends Component {
                             <div className="design-links">Aviate</div>
                             <div className="aviate-cover-image"></div>
                         </div>
+                        <div onClick={() => { this.elmCreekModalToggle() }} className="single-project">
+                            <div className="design-links">Elm Creek</div>
+                            <div className="elm-creek-cover-image"></div>
+                        </div>
                         <div onClick={() => { this.alexModalToggle() }} className="single-project">
                             <div className="design-links">Alex Campaign</div>
                             <div className="alex-campaign-cover-image"></div>
-                        </div>
-                        <div className="single-project">
-                            <div className="design-links">Elm Creek</div>
-                            <div className="elm-creek-cover-image"></div>
                         </div>
                     </div>
                 </div>
