@@ -268,3 +268,11 @@ to { opacity: 0; }
   margin-right: 15px;
   background-image: url("./linkedin-icon.png");
 }
+
+.about, .contact {
+  width: 100%;
+  height: 620px;
+  background-color: pink;
+  text-align: center;
+  line-height: 620px;
+}
