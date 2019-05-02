@@ -6,7 +6,8 @@ class Design extends Component {
 
     state = {
         toggle: false,
-        modalToggle: false
+        nakedTravelModalToggle: false,
+        aviateModalToggle: false
     }
 
     toggleHandler() {
@@ -21,26 +22,38 @@ class Design extends Component {
         }
     }
 
-    modalToggle() {
-        if (this.state.modalToggle === false) {
+    nakedTravelModalToggle() {
+        if (this.state.nakedTravelModalToggle === false) {
             this.setState({
-                modalToggle: true
+                nakedTravelModalToggle: true
             })
         } else {
             this.setState({
-                modalToggle: false
+                nakedTravelModalToggle: false
+            })
+        }
+    }
+
+    aviateModalToggle() {
+        if (this.state.aviateModalToggle === false) {
+            this.setState({
+                aviateModalToggle: true
+            })
+        } else {
+            this.setState({
+                aviateModalToggle: false
             })
         }
     }
 
     showNakedTravelModal() {
-        if (this.state.modalToggle === true) {
+        if (this.state.nakedTravelModalToggle === true) {
             return <NakedTravelModal />
         } else return null
     }
 
     showAviateModal() {
-        if (this.state.modalToggle === true) {
+        if (this.state.aviateModalToggle === true) {
             return <AviateModal />
         } else return null
     }
@@ -52,15 +65,13 @@ class Design extends Component {
                     <div className="modal">{this.showNakedTravelModal()}</div>
                     <div className="modal">{this.showAviateModal()}</div>
                     <div className="design-projects">
-                        <div onClick={() => { this.modalToggle() }} className="single-project">
+                        <div onClick={() => { this.nakedTravelModalToggle() }} className="single-project">
                             <div className="design-links">NakedTravel</div>
                             <div className="naked-travel-cover-image"></div>
                         </div>
-                        <div className="single-project">
-                            <div onClick={() => { this.modalToggle() }} className="single-project">
-                                <div className="design-links">Aviate</div>
-                                <div className="aviate-cover-image"></div>
-                            </div>
+                        <div onClick={() => { this.aviateModalToggle() }} className="single-project">
+                            <div className="design-links">Aviate</div>
+                            <div className="aviate-cover-image"></div>
                         </div>
                         <div className="single-project">
                             <div className="design-links">Alex Campaign</div>
