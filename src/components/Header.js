@@ -27,15 +27,17 @@ class Header extends Component {
             return (
                 <div className="menu-block">
                     <div className="menu-x" onClick={this.toggleHandler}></div>
-                    <Link to="/" className="menu-home">
-                        <div className="menu-text">Home</div>
-                    </Link>
-                    <Link to="/about" className="menu-about">
-                        <div className="menu-text">About</div>
-                    </Link>
-                    <Link to="/contact" className="menu-contact">
-                        <div className="menu-text">Contact</div>
-                    </Link>
+                    <div className="menu-links">
+                        <Link to="/" className="menu-link">
+                            <div className="menu-text" onClick={this.toggleHandler}>Home</div>
+                        </Link>
+                        <Link to="/about" className="menu-link">
+                            <div className="menu-text" onClick={this.toggleHandler}>About</div>
+                        </Link>
+                        <Link to="/contact" className="menu-link">
+                            <div className="menu-text" onClick={this.toggleHandler}>Contact</div>
+                        </Link>
+                    </div>
                 </div>
             )
         } else {
