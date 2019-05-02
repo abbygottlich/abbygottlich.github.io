@@ -1,6 +1,6 @@
 .main {
   display: flex;
-  height: 620px;
+  height: 100vh;
   background-image: url("background.jpg");
   background-size: cover;
 }
@@ -49,6 +49,7 @@
   justify-content: center;
   align-items: center;
   width: 50%;
+  height: 100vh;
   background-color: #B8BC00;
   opacity: 0.85;
   transition: opacity 1s;
@@ -102,6 +103,7 @@ to { opacity: 0; }
   justify-content: center;
   align-items: center;
   width: 50%;
+  height: 100vh;
   background-color: #ff6839;
   opacity: 0.85;
   transition: opacity 1s;
@@ -283,12 +285,11 @@ to { opacity: 0; }
 
 .main {
   display: block;
-  height: 1030px;
 }
 
 .development, .design {
   width: 100%;
-  height: 515px;
+  height: 50vh;
 }
 
 .design-content {
@@ -301,9 +302,9 @@ to { opacity: 0; }
 
 .modal-content {
   width: 100%;
-  height: 1025px;
+  height: 100vh;
   margin-left: 0%;
-  margin-top: -88%;
+  margin-top: -87%;
   border: none;
   border-radius: 0px;
 }
@@ -318,10 +319,6 @@ to { opacity: 0; }
 
 @media only screen and (max-width: 375px) {
 
-.main {
-  height: 815px;
-}
-
 .menu {
   float: right;
   width: 35px;
@@ -332,10 +329,6 @@ to { opacity: 0; }
   background-size: 35px;
   background-color: transparent;
   cursor: pointer;
-}
-
-.development, .design {
-  height: 406px;
 }
 
 .development-title {
@@ -366,7 +359,7 @@ to { opacity: 0; }
 }
 
 .modal-content {
-  margin-top: -146%;
+  margin-top: -147%;
 }
 
 .modal-header {
@@ -383,6 +376,10 @@ to { opacity: 0; }
   background-size: 20px;
   margin-left: 335px;
   margin-top: -50px;
+}
+
+.project-images {
+  height: 743px;
 }
 
 .social-icons {

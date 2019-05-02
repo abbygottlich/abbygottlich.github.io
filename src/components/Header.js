@@ -46,11 +46,11 @@ class Header extends Component {
         return (
             <div className="header">
                 <Link to="/" className="logo"></Link>
-                {/* <div className="nav">
+                <div className="nav">
                     <Link to="/" className="nav-text">Home</Link>
                     <Link to="/about" className="nav-text">About</Link>
                     <Link to="/contact" className="nav-text">Contact</Link>
-                </div> */}
+                </div>
                 <button className={this.state.menuIcon} onClick={this.toggleHandler}></button>
                 <div>{this.showMenu()}</div>
             </div>
