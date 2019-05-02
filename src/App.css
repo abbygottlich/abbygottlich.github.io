@@ -318,6 +318,63 @@ to { opacity: 0; }
 
 @media only screen and (max-width: 375px) {
 
+.main {
+  height: 815px;
+}
 
+.development, .design {
+  height: 406px;
+}
+
+.development-title {
+  width: 250px;
+  background-size: 250px;
+}
+
+.development-links {
+  margin-top: 10px;
+}
+
+.dev-link-text, .cursor {
+  font-size: 16px;
+}
+
+.design-title {
+  width: 265px;
+  background-size: 265px;
+}
+
+.design-content {
+  max-height: 335px;
+}
+
+.design-projects {
+  width: 300px;
+  height: 190px;
+}
+
+.modal-content {
+  margin-top: -146%;
+}
+
+.modal-header {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.project-name, .prototype {
+  font-size: 20px;
+}
+
+.x {
+  width: 20px;
+  background-size: 20px;
+  margin-left: 335px;
+  margin-top: -50px;
+}
+
+.social-icons {
+  display: none;
+}
 
 }

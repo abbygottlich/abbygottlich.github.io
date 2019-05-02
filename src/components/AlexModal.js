@@ -22,7 +22,8 @@ class AlexModal extends Component {
         if (this.state.xToggle === false) {
             return <div className="modal-content">
                 <div className="modal-header">
-                    <div className="project-name">Alex Campaign Website</div>
+                    <div className="project-name">Alex City Council</div>
+                    <div className="project-name">Campaign Website</div>
                     <div onClick={() => { this.xToggle() }} className="x"></div>
                 </div>
                 <div className="project-images">
