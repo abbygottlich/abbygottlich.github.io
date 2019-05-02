@@ -8,11 +8,11 @@ class Header extends Component {
         toggle: false
     }
 
-    toggleHandler() {
+    toggleHandler = () => {
         if (this.state.toggle === false) {
             this.setState({
                 toggle: true,
-                menuIcon: "x"
+                menuIcon: "menu-x"
             })
         } else {
             this.setState({
@@ -26,6 +26,7 @@ class Header extends Component {
         if (this.state.toggle === true) {
             return (
                 <div className="menu-block">
+                    <div className="menu-x" onClick={this.toggleHandler}></div>
                     <Link to="/" className="menu-home">
                         <div className="menu-text">Home</div>
                     </Link>
@@ -52,7 +53,7 @@ class Header extends Component {
                         <Link to="/about" className="nav-text">About</Link>
                         <Link to="/contact" className="nav-text">Contact</Link>
                     </div>
-                    <button className={this.state.menuIcon} onClick={this.toggleHandler}></button>
+                    <div className={this.state.menuIcon} onClick={this.toggleHandler}></div>
                 </div>
                 <div>{this.showMenu()}</div>
             </div>

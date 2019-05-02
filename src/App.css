@@ -374,6 +374,28 @@ to { opacity: 0; }
   margin-right: 25px;
 }
 
+.menu-block {
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  width: 300px;
+  height: 150px;
+  background-color: #762b24;
+}
+
+.menu-x {
+  float: right;
+  width: 35px;
+  height: 35px;
+  border: none;
+  background-image: url("./x-icon.svg");
+  background-repeat: no-repeat;
+  background-size: 35px;
+  background-color: transparent;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
 .development-title {
   width: 250px;
   background-size: 250px;
