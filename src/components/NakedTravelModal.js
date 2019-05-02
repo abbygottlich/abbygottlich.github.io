@@ -21,8 +21,11 @@ class NakedTravelModal extends Component {
     render() {
         if (this.state.xToggle === false) {
             return <div className="modal-content">
-                <div onClick={() => { this.xToggle() }} className="x"></div>
-                <div className="project-name">NakedTravel UX Design</div>
+                <div className="modal-header">
+                    <div className="project-name">NakedTravel UX Design</div>
+                    <a className="prototype" href="https://projects.invisionapp.com/share/P9E50REUB#/screens" target="blank">View Prototype</a>
+                    <div onClick={() => { this.xToggle() }} className="x"></div>
+                </div>
                 <div className="project-images">
                     <img className="project-image" alt="project" src={require('../naked-travel/slide-1.jpg')} />
                     <img className="project-image" alt="project" src={require('../naked-travel/slide-2.jpg')} />

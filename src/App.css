@@ -159,13 +159,25 @@ to { opacity: 0; }
   background-color: #9a431f;
 }
 
-.cover-image {
+.naked-travel-cover-image, .aviate-cover-image, .alex-campaign-cover-image, .elm-creek-cover-image {
   width: 260px;
   height: 185px;
   background-image: url("naked-travel-cover.png");
   background-size: 260px;
   background-repeat: no-repeat;
   margin: auto;
+}
+
+.aviate-cover-image {
+  background-image: url("aviate-cover.png");
+}
+
+.alex-campaign-cover-image {
+  background-image: url("alex-campaign-cover.png");
+}
+
+.elm-creek-cover-image {
+  background-image: url("elm-creek-cover.png");
 }
 
 .modal {
@@ -176,7 +188,7 @@ to { opacity: 0; }
 .modal-content {
   width: 1000px;
   height: 550px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.8);
   top: 50%;
   left: 50%;
   margin-left: -50%;
@@ -185,10 +197,26 @@ to { opacity: 0; }
   border-radius: 5px;
 }
 
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px 0px 10px;
+}
+
 .project-name {
   font-size: 24px;
-  float: left;
-  margin: 10px 0px 10px 10px;
+}
+
+.prototype {
+  font-size: 24px;
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.prototype:hover {
+  border-bottom: 1px solid #ffffff;
 }
 
 .x {
@@ -197,8 +225,6 @@ to { opacity: 0; }
   background-image: url("x-icon.svg");
   background-size: 30px;
   background-repeat: no-repeat;
-  float: right;
-  margin: 10px 10px 10px 0px;
   cursor: pointer;
 }
 
@@ -212,7 +238,6 @@ to { opacity: 0; }
   display: block;
   width: 90%;
   height: auto;
-  /* background-color: yellow; */
   margin: auto;
   margin-top: 10px;
 }

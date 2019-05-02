@@ -32,7 +32,7 @@ class Design extends Component {
         }
     }
 
-    showProjectModal() {
+    showNakedTravelModal() {
         if (this.state.modalToggle === true) {
             return <NakedTravelModal />
         } else return null
@@ -42,23 +42,23 @@ class Design extends Component {
         if (this.state.toggle === true) {
             return (
                 <div>
-                    <div className="modal">{this.showProjectModal()}</div>
+                    <div className="modal">{this.showNakedTravelModal()}</div>
                     <div className="design-projects">
                         <div onClick={() => { this.modalToggle() }} className="single-project">
                             <div className="design-links">NakedTravel</div>
-                            <div className="cover-image"></div>
+                            <div className="naked-travel-cover-image"></div>
                         </div>
                         <div className="single-project">
-                            <div className="design-links">NakedTravel</div>
-                            <div className="cover-image"></div>
+                            <div className="design-links">Aviate</div>
+                            <div className="aviate-cover-image"></div>
                         </div>
                         <div className="single-project">
-                            <div className="design-links">NakedTravel</div>
-                            <div className="cover-image"></div>
+                            <div className="design-links">Alex Campaign</div>
+                            <div className="alex-campaign-cover-image"></div>
                         </div>
                         <div className="single-project">
-                            <div className="design-links">NakedTravel</div>
-                            <div className="cover-image"></div>
+                            <div className="design-links">Elm Creek</div>
+                            <div className="elm-creek-cover-image"></div>
                         </div>
                     </div>
                 </div>
