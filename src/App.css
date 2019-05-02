@@ -322,6 +322,18 @@ to { opacity: 0; }
   height: 815px;
 }
 
+.menu {
+  float: right;
+  width: 35px;
+  height: 35px;
+  border: none;
+  background-image: url("./menu.svg");
+  background-repeat: no-repeat;
+  background-size: 35px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
 .development, .design {
   height: 406px;
 }
