@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import NakedTravelModal from "./NakedTravelModal";
+import AviateModal from "./AviateModal";
 
 class Design extends Component {
 
@@ -38,19 +39,28 @@ class Design extends Component {
         } else return null
     }
 
+    showAviateModal() {
+        if (this.state.modalToggle === true) {
+            return <AviateModal />
+        } else return null
+    }
+
     showDesignLinks() {
         if (this.state.toggle === true) {
             return (
                 <div>
                     <div className="modal">{this.showNakedTravelModal()}</div>
+                    <div className="modal">{this.showAviateModal()}</div>
                     <div className="design-projects">
                         <div onClick={() => { this.modalToggle() }} className="single-project">
                             <div className="design-links">NakedTravel</div>
                             <div className="naked-travel-cover-image"></div>
                         </div>
                         <div className="single-project">
-                            <div className="design-links">Aviate</div>
-                            <div className="aviate-cover-image"></div>
+                            <div onClick={() => { this.modalToggle() }} className="single-project">
+                                <div className="design-links">Aviate</div>
+                                <div className="aviate-cover-image"></div>
+                            </div>
                         </div>
                         <div className="single-project">
                             <div className="design-links">Alex Campaign</div>
