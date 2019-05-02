@@ -246,3 +246,25 @@ to { opacity: 0; }
 .design-title:hover, .design-projects {
   cursor: pointer;
 }
+
+.social-icons {
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  margin-top: -65px;
+  margin-left: 25px;
+}
+
+.linkedin-icon, .github-icon {
+  width: 40px;
+  height: 40px;
+  background-image: url("./github-icon.png");
+  background-size: 40px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.linkedin-icon {
+  margin-right: 15px;
+  background-image: url("./linkedin-icon.png");
+}
