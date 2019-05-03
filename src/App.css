@@ -356,6 +356,10 @@ to { opacity: 0; }
   text-decoration: none;
 }
 
+.resume {
+  color: #ffffff;
+}
+
 /* ------------------------------ FOR TABLET ------------------------------ */
 
 @media only screen and (max-width: 768px) {
