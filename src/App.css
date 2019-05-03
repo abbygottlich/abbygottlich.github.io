@@ -540,7 +540,8 @@ to { opacity: 0; }
 .x {
   width: 20px;
   background-size: 20px;
-  margin-left: 310px;
+  margin-left: 321px;
+  margin-right: 15px;
   margin-top: -50px;
 }
 
