@@ -37,6 +37,12 @@ class Header extends Component {
                         <Link to="/contact" className="menu-link">
                             <div className="menu-text" onClick={this.toggleHandler}>Contact</div>
                         </Link>
+                        <a href="https://www.linkedin.com/in/abbygottlich/" className="menu-link" target="blank">
+                            <div className="menu-text">LinkedIn</div>
+                        </a>
+                        <a href="https://github.com/abbygottlich" className="menu-link" target="blank">
+                            <div className="menu-text">GitHub</div>
+                        </a>
                     </div>
                 </div>
             )
