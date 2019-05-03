@@ -1,3 +1,13 @@
+/* ------------------------------ FOR IMAC ------------------------------ */
+@media only screen and (max-width: 4096px) {
+
+  .intro {
+    padding-top: 1000px;
+  }
+  
+  }
+
+/* ------------------------------ FOR MACBOOK PRO ------------------------------ */  
 .main {
   display: flex;
   height: 100vh;
@@ -358,15 +368,6 @@ to { opacity: 0; }
 
 .resume {
   color: #ffffff;
-}
-
-/* ------------------------------ FOR IMAC ------------------------------ */
-@media only screen and (max-width: 4096px) {
-
-.intro {
-  padding-top: 500px;
-}
-
 }
 
 /* ------------------------------ FOR TABLET ------------------------------ */
