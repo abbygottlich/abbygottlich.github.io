@@ -322,7 +322,7 @@ to { opacity: 0; }
   margin-top: 20px;
 }
 
-.intro {
+.intro, .contact-intro {
   width: 75%;
   margin: auto;
   padding-top: 300px;
@@ -331,6 +331,11 @@ to { opacity: 0; }
   color: #ffffff;
   font-size: 40px;
   line-height: 50px;
+}
+
+.contact-intro {
+  text-align: right;
+  padding-top: 250px;
 }
 
 .about-paragraph, .contact-info {
@@ -344,6 +349,7 @@ to { opacity: 0; }
 
 .contact-info {
   margin-top: 0px;
+  text-align: right;
 }
 
 .menu-link {
