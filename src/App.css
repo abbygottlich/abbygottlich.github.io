@@ -504,6 +504,7 @@ to { opacity: 0; }
 .design-title {
   width: 265px;
   background-size: 265px;
+  margin-bottom: 0px;
 }
 
 .design-content {
@@ -539,12 +540,12 @@ to { opacity: 0; }
 .x {
   width: 20px;
   background-size: 20px;
-  margin-left: 321px;
+  margin-left: 310px;
   margin-top: -50px;
 }
 
 .project-images {
-  height: 525px;
+  height: 495px;
 }
 
 .social-icons {
