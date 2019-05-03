@@ -516,7 +516,8 @@ to { opacity: 0; }
 }
 
 .modal-content {
-  margin-top: -147%;
+  margin-top: -115%;
+  height: 86vh;
 }
 
 .modal-header {
@@ -536,7 +537,7 @@ to { opacity: 0; }
 }
 
 .project-images {
-  height: 743px;
+  height: 525px;
 }
 
 .social-icons {
