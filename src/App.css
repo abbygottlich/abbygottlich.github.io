@@ -515,9 +515,16 @@ to { opacity: 0; }
   height: 190px;
 }
 
+.modal {
+  top: 0;
+  margin-top: 120px;
+}
+
 .modal-content {
-  margin-top: -115%;
-  height: 86vh;
+  margin-top: -110%;
+  height: 76vh;
+  width: 95%;
+  margin: auto;
 }
 
 .modal-header {
@@ -532,7 +539,7 @@ to { opacity: 0; }
 .x {
   width: 20px;
   background-size: 20px;
-  margin-left: 335px;
+  margin-left: 321px;
   margin-top: -50px;
 }
 
