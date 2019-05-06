@@ -1,6 +1,10 @@
 /* ------------------------------ FOR IMAC ------------------------------ */
 @media only screen and (max-width: 4096px) {
 
+  .design {
+    background-color: blue;
+  }
+
   .logo {
     margin-right: 1500px;
   }
