@@ -380,12 +380,13 @@
   }
   
   .modal-content {
-    width: 1000px;
-    height: 550px;
+    width: 950px;
+    height: 530px;
+    margin-top: -20%;
   }
   
   .project-images {
-    height: 500px;
+    height: 465px;
   }
   
   .intro {
