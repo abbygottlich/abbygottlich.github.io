@@ -8,366 +8,368 @@
   }
 
 /* ------------------------------ FOR MACBOOK PRO ------------------------------ */  
-.main {
-  display: flex;
-  height: 100vh;
-  background-image: url("background.jpg");
-  background-size: cover;
-}
-
-/* header */
-.header {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  z-index: 1;
-  margin-top: 20px;
-}
-
-.logo {
-  width: 240px;
-  height: 170px;
-  background-image: url("logo.svg");
-  background-size: 280px;
-  background-repeat: no-repeat;
-  margin-top: -90px;
-  margin-right: 500px;
-  margin-left: -20px;
-}
-
-.nav-and-menu {
-  display: flex;
-  margin-left: 180px;
-}
-
-.nav {
-  display: flex;
-  justify-content: space-between;
-  width: 300px;
-}
-
-.nav-text {
-  color: #ffffff;
-  text-transform: uppercase;
-  font-family: "Avenir", sans-serif;
-  font-size: 14px;
-  letter-spacing: 2px;
-  transition: color 1s;
-  text-decoration: none;
-}
-
-.nav-text:hover {
-  color: #000000;
-}
-
-.menu {
-  float: right;
-  width: 35px;
-  height: 35px;
-  border: none;
-  background-image: url("./menu.svg");
-  background-repeat: no-repeat;
-  background-size: 35px;
-  background-color: transparent;
-  cursor: pointer;
-  visibility: hidden;
-}
-
-/* development */
-.development {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50%;
-  height: 100vh;
-  background-color: #B8BC00;
-  opacity: 0.85;
-  transition: opacity 1s;
-}
-
-.development:hover {
-  opacity: 1;
-}
-
-.development-title {
-  width: 347px;
-  height: 38px;
-  background-image: url("development-title.png");
-  background-size: 347px;
-  background-repeat: no-repeat;
-}
-
-.development-links {
-  text-align: center;
-  margin-top: 25px;
-}
-
-.dev-link-text {
-  font-family: "Menlo", sans-serif;
-  font-size: 20px;
-  color: #ffffff;
-  text-decoration: none;
-}
-
-.dev-link-text:hover {
-  border-bottom: 1px solid #ffffff;
-}
-
-.cursor {
-  color: #ffffff;
-  font-size: 20px;
-  margin-left: 1px;
-  animation-name: blink;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
-  opacity: 1;
-}
-
-@keyframes blink {
-from { opacity: 1; }
-to { opacity: 0; }
-}
-
-/* design */
-.design {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50%;
-  height: 100vh;
-  background-color: #ff6839;
-  opacity: 0.85;
-  transition: opacity 1s;
-}
-
-.design:hover {
-  opacity: 1;
-}
-
-.design-title {
-  position: sticky;
-  top: 0;
-  width: 344px;
-  height: 95px;
-  background-image: url("design-text.png");
-  background-size: 344px;
-  background-repeat: no-repeat;
-  margin: auto;
-  margin-bottom: 15px;
-}
-
-.design-content {
-  width: 100%;
-  max-height: 380px;
-}
-
-.design-links {
-  text-align: center;
-  font-family: "Raleway", sans-serif;
-  font-size: 20px;
-  color: #ffffff;
-}
-
-.design-projects {
-  width: 350px;
-  height: 310px;
-  border: 1px solid #ffffff;
-  border-radius: 5px;
-  margin: auto;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  overflow: scroll;
-  z-index: 1;
-}
-
-.single-project {
-  background-color: none;
-  margin-bottom: 30px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  transition: background-color 0.5s;
-}
-
-.single-project:hover {
-  background-color: #9a431f;
-}
-
-.naked-travel-cover-image, .aviate-cover-image, .alex-campaign-cover-image, .elm-creek-cover-image {
-  width: 260px;
-  height: 185px;
-  background-image: url("naked-travel-cover.png");
-  background-size: 260px;
-  background-repeat: no-repeat;
-  margin: auto;
-}
-
-.aviate-cover-image {
-  background-image: url("aviate-cover.png");
-}
-
-.alex-campaign-cover-image {
-  background-image: url("alex-campaign-cover.png");
-}
-
-.elm-creek-cover-image {
-  background-image: url("elm-creek-cover.png");
-}
-
-/* modal */
-.modal {
-  position: absolute;
-  z-index: 2;
-}
-
-.modal-content {
-  width: 1000px;
-  height: 550px;
-  background-color: rgba(0, 0, 0, 0.8);
-  top: 50%;
-  left: 50%;
-  margin-left: -50%;
-  margin-top: -20%;
-  border: 1px solid #ffffff;
-  border-radius: 5px;
-}
-
-.modal-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-}
-
-.project-name {
-  font-size: 24px;
-}
-
-.prototype {
-  font-size: 24px;
-  color: #ffffff;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.prototype:hover {
-  border-bottom: 1px solid #ffffff;
-}
-
-.x {
-  width: 30px;
-  height: 30px;
-  background-image: url("x-icon.svg");
-  background-size: 30px;
-  background-repeat: no-repeat;
-  cursor: pointer;
-}
-
-.project-images {
-  width: 100%;
-  height: 500px;
-  overflow: scroll;
-}
-
-.project-image {
-  display: block;
-  width: 90%;
-  height: auto;
-  margin: auto;
-  margin-bottom: 10px;
-}
-
-.logo:hover, .nav-text:hover, .development-title:hover, .development-links:hover,
-.design-title:hover, .design-projects {
-  cursor: pointer;
-}
-
-/* footer */
-.social-icons {
-  position: absolute;
-  z-index: 1;
-  display: flex;
-  margin-top: -65px;
-  margin-left: 25px;
-}
-
-.linkedin-icon, .github-icon {
-  width: 40px;
-  height: 40px;
-  background-image: url("./github-icon.png");
-  background-size: 40px;
-  background-repeat: no-repeat;
-  cursor: pointer;
-}
-
-.linkedin-icon {
-  margin-right: 15px;
-  background-image: url("./linkedin-icon.png");
-}
-
-/* about */
-.about, .contact {
-  width: 100%;
-  height: 100vh;
-  background-image: url("./about.jpg");
-  background-size: cover;
-}
-
-.contact {
-  background-image: url("./contact.jpg");
-}
-
-.about-content, .contact-content {
-  width: 100%;
-  height: 100vh;
-  background-color: rgba(255, 104, 57, 0.8);
-}
-
-.contact-content {
-  background-color: rgba(184,188,0,0.9)
-}
-
-.contact-info-wrapper {
-  margin-top: 20px;
-}
-
-.intro, .contact-intro {
-  width: 75%;
-  margin: auto;
-  padding-top: 300px;
-  font-family: "Avenir", sans-serif;
-  font-weight: bolder;
-  color: #ffffff;
-  font-size: 40px;
-  line-height: 50px;
-}
-
-.contact-intro {
-  text-align: right;
-  padding-top: 250px;
-}
-
-.about-paragraph, .contact-info {
-  width: 75%;
-  margin: auto;
-  margin-top: 20px;
-  font-family: "Avenir", sans-serif;
-  color: #ffffff;
-  font-size: 20px;
-}
-
-.contact-info {
-  margin-top: 0px;
-  text-align: right;
-}
-
-.menu-link {
-  text-decoration: none;
-}
-
-.resume {
-  color: #ffffff;
+@media only screen and (max-width: 2560px) {
+  .main {
+    display: flex;
+    height: 100vh;
+    background-image: url("background.jpg");
+    background-size: cover;
+  }
+  
+  /* header */
+  .header {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    z-index: 1;
+    margin-top: 20px;
+  }
+  
+  .logo {
+    width: 240px;
+    height: 170px;
+    background-image: url("logo.svg");
+    background-size: 280px;
+    background-repeat: no-repeat;
+    margin-top: -90px;
+    margin-right: 500px;
+    margin-left: -20px;
+  }
+  
+  .nav-and-menu {
+    display: flex;
+    margin-left: 180px;
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+  }
+  
+  .nav-text {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: "Avenir", sans-serif;
+    font-size: 14px;
+    letter-spacing: 2px;
+    transition: color 1s;
+    text-decoration: none;
+  }
+  
+  .nav-text:hover {
+    color: #000000;
+  }
+  
+  .menu {
+    float: right;
+    width: 35px;
+    height: 35px;
+    border: none;
+    background-image: url("./menu.svg");
+    background-repeat: no-repeat;
+    background-size: 35px;
+    background-color: transparent;
+    cursor: pointer;
+    visibility: hidden;
+  }
+  
+  /* development */
+  .development {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100vh;
+    background-color: #B8BC00;
+    opacity: 0.85;
+    transition: opacity 1s;
+  }
+  
+  .development:hover {
+    opacity: 1;
+  }
+  
+  .development-title {
+    width: 347px;
+    height: 38px;
+    background-image: url("development-title.png");
+    background-size: 347px;
+    background-repeat: no-repeat;
+  }
+  
+  .development-links {
+    text-align: center;
+    margin-top: 25px;
+  }
+  
+  .dev-link-text {
+    font-family: "Menlo", sans-serif;
+    font-size: 20px;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  .dev-link-text:hover {
+    border-bottom: 1px solid #ffffff;
+  }
+  
+  .cursor {
+    color: #ffffff;
+    font-size: 20px;
+    margin-left: 1px;
+    animation-name: blink;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    opacity: 1;
+  }
+  
+  @keyframes blink {
+  from { opacity: 1; }
+  to { opacity: 0; }
+  }
+  
+  /* design */
+  .design {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100vh;
+    background-color: #ff6839;
+    opacity: 0.85;
+    transition: opacity 1s;
+  }
+  
+  .design:hover {
+    opacity: 1;
+  }
+  
+  .design-title {
+    position: sticky;
+    top: 0;
+    width: 344px;
+    height: 95px;
+    background-image: url("design-text.png");
+    background-size: 344px;
+    background-repeat: no-repeat;
+    margin: auto;
+    margin-bottom: 15px;
+  }
+  
+  .design-content {
+    width: 100%;
+    max-height: 380px;
+  }
+  
+  .design-links {
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    font-size: 20px;
+    color: #ffffff;
+  }
+  
+  .design-projects {
+    width: 350px;
+    height: 310px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    overflow: scroll;
+    z-index: 1;
+  }
+  
+  .single-project {
+    background-color: none;
+    margin-bottom: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: background-color 0.5s;
+  }
+  
+  .single-project:hover {
+    background-color: #9a431f;
+  }
+  
+  .naked-travel-cover-image, .aviate-cover-image, .alex-campaign-cover-image, .elm-creek-cover-image {
+    width: 260px;
+    height: 185px;
+    background-image: url("naked-travel-cover.png");
+    background-size: 260px;
+    background-repeat: no-repeat;
+    margin: auto;
+  }
+  
+  .aviate-cover-image {
+    background-image: url("aviate-cover.png");
+  }
+  
+  .alex-campaign-cover-image {
+    background-image: url("alex-campaign-cover.png");
+  }
+  
+  .elm-creek-cover-image {
+    background-image: url("elm-creek-cover.png");
+  }
+  
+  /* modal */
+  .modal {
+    position: absolute;
+    z-index: 2;
+  }
+  
+  .modal-content {
+    width: 1000px;
+    height: 550px;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 50%;
+    left: 50%;
+    margin-left: -50%;
+    margin-top: -20%;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+  }
+  
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .project-name {
+    font-size: 24px;
+  }
+  
+  .prototype {
+    font-size: 24px;
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .prototype:hover {
+    border-bottom: 1px solid #ffffff;
+  }
+  
+  .x {
+    width: 30px;
+    height: 30px;
+    background-image: url("x-icon.svg");
+    background-size: 30px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+  
+  .project-images {
+    width: 100%;
+    height: 500px;
+    overflow: scroll;
+  }
+  
+  .project-image {
+    display: block;
+    width: 90%;
+    height: auto;
+    margin: auto;
+    margin-bottom: 10px;
+  }
+  
+  .logo:hover, .nav-text:hover, .development-title:hover, .development-links:hover,
+  .design-title:hover, .design-projects {
+    cursor: pointer;
+  }
+  
+  /* footer */
+  .social-icons {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    margin-top: -65px;
+    margin-left: 25px;
+  }
+  
+  .linkedin-icon, .github-icon {
+    width: 40px;
+    height: 40px;
+    background-image: url("./github-icon.png");
+    background-size: 40px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+  
+  .linkedin-icon {
+    margin-right: 15px;
+    background-image: url("./linkedin-icon.png");
+  }
+  
+  /* about */
+  .about, .contact {
+    width: 100%;
+    height: 100vh;
+    background-image: url("./about.jpg");
+    background-size: cover;
+  }
+  
+  .contact {
+    background-image: url("./contact.jpg");
+  }
+  
+  .about-content, .contact-content {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(255, 104, 57, 0.8);
+  }
+  
+  .contact-content {
+    background-color: rgba(184,188,0,0.9)
+  }
+  
+  .contact-info-wrapper {
+    margin-top: 20px;
+  }
+  
+  .intro, .contact-intro {
+    width: 75%;
+    margin: auto;
+    padding-top: 300px;
+    font-family: "Avenir", sans-serif;
+    font-weight: bolder;
+    color: #ffffff;
+    font-size: 40px;
+    line-height: 50px;
+  }
+  
+  .contact-intro {
+    text-align: right;
+    padding-top: 250px;
+  }
+  
+  .about-paragraph, .contact-info {
+    width: 75%;
+    margin: auto;
+    margin-top: 20px;
+    font-family: "Avenir", sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+  }
+  
+  .contact-info {
+    margin-top: 0px;
+    text-align: right;
+  }
+  
+  .menu-link {
+    text-decoration: none;
+  }
+  
+  .resume {
+    color: #ffffff;
+  }
 }
 
 /* ------------------------------ FOR TABLET ------------------------------ */
