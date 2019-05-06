@@ -1,8 +1,42 @@
 /* ------------------------------ FOR IMAC ------------------------------ */
 @media only screen and (max-width: 4096px) {
 
+  .logo {
+    margin-right: 1500px;
+  }
+
+  .design-content {
+    max-height: 0px;
+  }
+
+  .design-projects {
+    width: 550px;
+    height: 510px;
+  }
+
+  .naked-travel-cover-image, .aviate-cover-image, .alex-campaign-cover-image, .elm-creek-cover-image {
+    width: 360px;
+    height: 270px;
+    background-size: 360px;
+  }
+
+  .modal-content {
+    width: 1500px;
+    height: 1050px;
+  }
+
+  .project-images {
+    height: 980px;
+  }
+
   .intro {
-    padding-top: 1000px;
+    padding-top: 700px;
+    font-size: 60px;
+    line-height: 65px;
+  }
+
+  .about-paragraph {
+    font-size: 28px;
   }
   
   }
@@ -369,7 +403,7 @@
   
   .resume {
     color: #ffffff;
-  }
+  1
 }
 
 /* ------------------------------ FOR TABLET ------------------------------ */
