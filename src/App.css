@@ -1,6 +1,4 @@
 /* ------------------------------ FOR IMAC ------------------------------ */
-@media only screen and (max-width: 4096px) {
-
   .main {
     display: flex;
     height: 100vh;
@@ -362,11 +360,9 @@
   .resume {
     color: #ffffff;
 }
-  
-  }
 
 /* ------------------------------ FOR MACBOOK PRO ------------------------------ */  
-@media only screen and (max-width: 2560px) {
+@media only screen and (max-width: 1680px) {
   
   .logo {
     margin-right: 500px;
