@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/static/media/slide-22.9dc84672.jpg"
   },
   {
-    "revision": "4614f2323637621939a6",
-    "url": "/static/css/main.92c5f25a.chunk.css"
+    "revision": "9c92f3ec5eb511c93e38",
+    "url": "/static/css/main.a6535fd9.chunk.css"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -152,7 +152,7 @@ self.__precacheManifest = [
     "url": "/static/media/slide-21.3c95d3fc.jpg"
   },
   {
-    "revision": "4614f2323637621939a6",
+    "revision": "9c92f3ec5eb511c93e38",
     "url": "/static/js/main.2e35c33b.chunk.js"
   },
   {
@@ -300,7 +300,7 @@ self.__precacheManifest = [
     "url": "/static/media/alex-slide-6.83a9519d.jpg"
   },
   {
-    "revision": "2fd29502f3a03fa0a5b1ebd5ab5040e5",
+    "revision": "b988be5ea5439a2dc13ef8a7cc53efc6",
     "url": "/index.html"
   }
 ];
