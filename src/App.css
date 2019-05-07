@@ -2,7 +2,7 @@
   .main {
     display: flex;
     height: 100vh;
-    background-image: url("background.jpg");
+    background-image: url("background-small.jpg");
     background-size: cover;
   }
 
@@ -301,12 +301,12 @@
   .about, .contact {
     width: 100%;
     height: 100vh;
-    background-image: url("./about.jpg");
+    background-image: url("./about-small.jpg");
     background-size: cover;
   }
   
   .contact {
-    background-image: url("./contact.jpg");
+    background-image: url("./contact-small.jpg");
   }
   
   .about-content, .contact-content {
