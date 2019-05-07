@@ -223,12 +223,19 @@ class Design extends Component {
         }
     }
 
+    scrollUp() {
+        window.scrollBy(0, -window.innerHeight)
+    }
+
     render() {
         return (
-            <div className="design">
-                <div className="design-content">
-                    <div className="design-title" onClick={() => { this.toggleHandler() }} ></div>
-                    <div className="design-links">{this.showDesignLinks()}</div>
+            <div>
+                <div onClick={this.scrollUp} className="design-arrow"></div>
+                <div className="design">
+                    <div className="design-content">
+                        <div className="design-title" onClick={() => { this.toggleHandler() }} ></div>
+                        <div className="design-links">{this.showDesignLinks()}</div>
+                    </div>
                 </div>
             </div>
         );

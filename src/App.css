@@ -421,6 +421,19 @@
   height: 100vh;
 }
 
+.development-arrow {
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  width: 60px;
+  height: 60px;
+  background-image: url("./down-arrow.png");
+  background-size: 60px;
+  background-repeat: no-repeat;
+  margin-left: -30px;
+  margin-top: -140px;
+}
+
 .design-content {
   max-height: 430px;
 }
@@ -440,6 +453,19 @@
 
 .project-images {
   height: 950px;
+}
+
+.design-arrow {
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  width: 60px;
+  height: 60px;
+  background-image: url("./up-arrow.png");
+  background-size: 60px;
+  background-repeat: no-repeat;
+  margin-left: -30px;
+  margin-top: 140px;
 }
 
 .social-icons {
