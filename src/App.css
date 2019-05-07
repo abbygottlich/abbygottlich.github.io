@@ -275,12 +275,9 @@
   }
   
   /* footer */
-  .social-icons {
+  .footer {
     position: absolute;
     z-index: 1;
-    display: flex;
-    margin-top: -65px;
-    margin-left: 25px;
   }
   
   .linkedin-icon, .github-icon {
@@ -445,6 +442,13 @@
   height: 950px;
 }
 
+.social-icons {
+  position: fixed;
+  display: flex;
+  margin-top: -65px;
+  margin-left: 25px;
+}
+
 .about {
   background-position: center;
 }
@@ -596,7 +600,7 @@
   height: 495px;
 }
 
-.social-icons {
+.footer {
   display: none;
 }
 
