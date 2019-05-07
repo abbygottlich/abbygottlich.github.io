@@ -31,10 +31,6 @@ class Development extends Component {
         }
     }
 
-    scrollDown() {
-        window.scrollBy(0, window.innerHeight)
-    }
-
     render() {
         return (
             <div>
@@ -44,7 +40,6 @@ class Development extends Component {
                         <div className="development-links">{this.showDevelopmentLinks()}</div>
                     </div>
                 </div>
-                <div onClick={this.scrollDown} className="development-arrow"></div>
             </div>
         );
     }
