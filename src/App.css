@@ -616,17 +616,19 @@
 }
 
 .development-arrow {
-  margin-top: 600px;
+  margin-top: 500px;
   width: 40px;
   height: 40px;
   background-size: 40px;
+  margin-left: -20px;
 }
 
 .design-arrow {
-  margin-top: 930px;
+  margin-top: 890px;
   width: 40px;
   height: 40px;
   background-size: 40px;
+  margin-left: -20px;
 }
 
 .design-title {
