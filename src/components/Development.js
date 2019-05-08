@@ -31,13 +31,20 @@ class Development extends Component {
         }
     }
 
+    scrollDown() {
+        window.scrollBy(0, window.innerHeight)
+    }
+
     render() {
         return (
             <div className="development-wrapper">
-                <div className="development">
-                    <div className="development-content">
-                        <div className="development-title" onClick={() => { this.toggleHandler() }}></div>
-                        <div className="development-links">{this.showDevelopmentLinks()}</div>
+                <div className="development-inner-wrapper">
+                    <div onClick={this.scrollDown} className="development-arrow"></div>
+                    <div className="development">
+                        <div className="development-content">
+                            <div className="development-title" onClick={() => { this.toggleHandler() }}></div>
+                            <div className="development-links">{this.showDevelopmentLinks()}</div>
+                        </div>
                     </div>
                 </div>
             </div>

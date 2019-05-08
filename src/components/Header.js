@@ -22,14 +22,6 @@ class Header extends Component {
         }
     }
 
-    scrollDown() {
-        window.scrollBy(0, window.innerHeight)
-    }
-
-    scrollUp() {
-        window.scrollBy(0, -window.innerHeight)
-    }
-
     showMenu() {
         if (this.state.toggle === true) {
             return (
@@ -55,10 +47,7 @@ class Header extends Component {
                 </div>
             )
         } else {
-            return <div>
-                <div onClick={this.scrollDown} className="development-arrow"></div>
-                <div onClick={this.scrollUp} className="design-arrow"></div>
-            </div>
+            return null
         }
     }
 
