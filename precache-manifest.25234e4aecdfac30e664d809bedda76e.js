@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/static/media/slide-22.9dc84672.jpg"
   },
   {
-    "revision": "becb1c5c2ef23eabcca8",
-    "url": "/static/css/main.510b6225.chunk.css"
+    "revision": "8c75a0ea235f66b22f59",
+    "url": "/static/css/main.6b744047.chunk.css"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -44,12 +44,12 @@ self.__precacheManifest = [
     "url": "/static/media/naked-travel-cover.71bbe57b.png"
   },
   {
-    "revision": "8f25e7db7c560ea0b60ff93a39e26336",
-    "url": "/static/media/aviate-cover.8f25e7db.png"
-  },
-  {
     "revision": "8080fec1f0e4efac292384f1228e3b9e",
     "url": "/static/media/background-small.8080fec1.jpg"
+  },
+  {
+    "revision": "8f25e7db7c560ea0b60ff93a39e26336",
+    "url": "/static/media/aviate-cover.8f25e7db.png"
   },
   {
     "revision": "328a397d244c68341e77d148304a2ee8",
@@ -152,8 +152,8 @@ self.__precacheManifest = [
     "url": "/static/media/slide-21.3c95d3fc.jpg"
   },
   {
-    "revision": "becb1c5c2ef23eabcca8",
-    "url": "/static/js/main.8d32a62c.chunk.js"
+    "revision": "8c75a0ea235f66b22f59",
+    "url": "/static/js/main.25870501.chunk.js"
   },
   {
     "revision": "b41029bb7cabcd58ec0239b745184022",
@@ -300,7 +300,7 @@ self.__precacheManifest = [
     "url": "/static/media/alex-slide-6.83a9519d.jpg"
   },
   {
-    "revision": "a470bb66a8c33d071eb0015f14df1763",
+    "revision": "32b1aa84574d209027e1f6fe3d49ad5f",
     "url": "/index.html"
   }
 ];
