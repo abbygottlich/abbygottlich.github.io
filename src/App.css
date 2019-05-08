@@ -366,6 +366,12 @@
     color: #ffffff;
 }
 
+.social-icons {
+  display: flex;
+  margin-top: -120px;
+  margin-left: 60px;
+}
+
 /* ------------------------------ FOR MACBOOK PRO ------------------------------ */  
 @media only screen and (max-width: 1680px) {
   
@@ -411,6 +417,7 @@
   .social-icons {
     display: flex;
     margin-left: 30px;
+    margin-top: 0px;
   }
 }
 
@@ -432,6 +439,10 @@
 .nav-and-menu {
   position: fixed;
   margin-top: 30px;
+}
+
+.development-wrapper, .design-wrapper {
+  width: 100%;
 }
 
 .development, .design {
@@ -489,7 +500,7 @@
 .social-icons {
   position: fixed;
   display: flex;
-  margin-top: -1090px;
+  margin-top: -1020px;
   margin-left: 25px;
 }
 
