@@ -247,7 +247,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 30px;
   }
   
   .project-name {
@@ -506,8 +506,12 @@
   border-radius: 0px;
 }
 
+.modal-header {
+  padding-top: 105px;
+}
+
 .project-images {
-  height: 950px;
+  height: 720px;
 }
 
 .design-arrow {
