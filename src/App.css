@@ -663,12 +663,20 @@
 }
 
 .design-content {
-  max-height: 335px;
+  max-height: 495px;
 }
 
 .design-projects {
-  width: 300px;
-  height: 190px;
+  width: 340px;
+  height: 350px;
+}
+
+.naked-travel-cover-image, .aviate-cover-image {
+  width: 325px;
+}
+
+.alex-campaign-cover-image, .elm-creek-cover-image {
+  width: 345px;
 }
 
 .modal {
