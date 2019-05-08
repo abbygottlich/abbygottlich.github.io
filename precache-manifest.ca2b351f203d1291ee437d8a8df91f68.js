@@ -44,12 +44,12 @@ self.__precacheManifest = [
     "url": "/static/media/naked-travel-cover.71bbe57b.png"
   },
   {
-    "revision": "8080fec1f0e4efac292384f1228e3b9e",
-    "url": "/static/media/background-small.8080fec1.jpg"
-  },
-  {
     "revision": "8f25e7db7c560ea0b60ff93a39e26336",
     "url": "/static/media/aviate-cover.8f25e7db.png"
+  },
+  {
+    "revision": "8080fec1f0e4efac292384f1228e3b9e",
+    "url": "/static/media/background-small.8080fec1.jpg"
   },
   {
     "revision": "328a397d244c68341e77d148304a2ee8",
