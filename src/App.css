@@ -464,17 +464,6 @@
 }
 
 .development-arrow {
-  /* position: absolute;
-  z-index: 2;
-  left: 50%;
-  width: 60px;
-  height: 60px;
-  background-image: url("./down-arrow.png");
-  background-size: 60px;
-  background-repeat: no-repeat;
-  margin-left: -30px;
-  margin-top: 750px; */
-
   width: 60px;
   height: 60px;
   background-image: url("./down-arrow.png");
@@ -631,6 +620,10 @@
   border-bottom: 1px solid #ffffff;
 }
 
+.development-inner-wrapper {
+  width: 100%;
+}
+
 .development-title {
   width: 250px;
   background-size: 250px;
@@ -645,19 +638,15 @@
 }
 
 .development-arrow {
-  margin-top: 500px;
   width: 40px;
   height: 40px;
   background-size: 40px;
-  margin-left: -20px;
 }
 
 .design-arrow {
-  margin-top: 890px;
   width: 40px;
   height: 40px;
   background-size: 40px;
-  margin-left: -20px;
 }
 
 .design-title {
