@@ -33,7 +33,7 @@ class Development extends Component {
 
     render() {
         return (
-            <div>
+            <div className="development-wrapper">
                 <div className="development">
                     <div className="development-content">
                         <div className="development-title" onClick={() => { this.toggleHandler() }}></div>

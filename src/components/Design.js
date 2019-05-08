@@ -225,7 +225,7 @@ class Design extends Component {
 
     render() {
         return (
-            <div>
+            <div className="design-wrapper">
                 <div className="design">
                     <div className="design-content">
                         <div className="design-title" onClick={() => { this.toggleHandler() }} ></div>
