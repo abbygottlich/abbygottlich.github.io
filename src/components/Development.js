@@ -32,7 +32,7 @@ class Development extends Component {
     }
 
     scrollDown() {
-        window.scrollBy(0, window.innerHeight)
+        window.scroll({ top: 1500, left: 0, behavior: 'smooth' })
     }
 
     render() {
