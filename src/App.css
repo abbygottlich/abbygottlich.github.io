@@ -1,9 +1,30 @@
 /* ------------------------------ FOR IMAC ------------------------------ */
-  .main {
+.main {
     display: flex;
     height: 100vh;
     background-image: url("background-small.jpg");
     background-size: cover;
+    /* for construction - delete or comment out later */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* remove later? - only for construction page */
+  .home-under-construction {
+    color: #ffffff;
+    font-family: "Avenir";
+    font-weight: bold;
+    font-size: 24px;
+  }
+
+  /* remove later? - only for construction page */
+  .feast-finder-link {
+    color: #ffffff;
+    transition: color 0.5s;
+  }
+  .feast-finder-link:hover {
+    color: #B8BC00;
   }
 
   /* header */
@@ -439,6 +460,11 @@
 /* ------------------------------ FOR TABLET ------------------------------ */
 
 @media only screen and (max-width: 768px) {
+.home-under-construction {
+  padding-top: 220px;
+  width: 300px;
+  margin: auto;
+}
 
 .main {
   display: block;
