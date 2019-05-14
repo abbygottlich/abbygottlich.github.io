@@ -99,17 +99,15 @@
     transition: opacity 1s;
   }
 
+  .development-wrapper:hover {
+    opacity: 1;
+  }
+
   .development {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    opacity: 0.85;
-    transition: opacity 1s;
-  }
-  
-  .development:hover {
-    opacity: 1;
   }
   
   .development-title {
@@ -163,17 +161,15 @@
     transition: opacity 1s;
   }
 
+  .design-wrapper:hover {
+    opacity: 1;
+  }
+
   .design {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    opacity: 0.85;
-    transition: opacity 1s;
-  }
-  
-  .design:hover {
-    opacity: 1;
   }
   
   .design-title {
