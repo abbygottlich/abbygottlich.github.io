@@ -7,12 +7,12 @@ class Home extends Component {
         return (
             <div className="App">
                 <div className="main">
-                    {/* <Development />
-                    <Design /> */}
-                    <div className="home-under-construction">
+                    <Development />
+                    <Design />
+                    {/* <div className="home-under-construction">
                         <div class="under-construction">Home Page currently under construction</div>
                         <div class="project-link">In the meantime, please view my most recent development project, <a href="https://abbygottlich.dev/feast-finder-app/" className="feast-finder-link" target="blank">Feast Finder</a></div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         );
