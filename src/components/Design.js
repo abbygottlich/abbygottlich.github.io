@@ -28,10 +28,12 @@ class Design extends Component {
             this.setState({
                 nakedTravelModalToggle: true
             })
+            this.props.hideHeaderNow()
         } else {
             this.setState({
                 nakedTravelModalToggle: false
             })
+            this.props.hideHeaderNow()
         }
     }
 
