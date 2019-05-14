@@ -7,7 +7,7 @@ class Home extends Component {
         return (
             <div className="App">
                 <div className="main">
-                    <Development />
+                    {this.props.headerFooterState === false ? <Development /> : null}
                     <Design hideHeaderFooter={this.props.hideHeaderFooter} />
                     {/* <div className="home-under-construction">
                         <div class="under-construction">Home Page currently under construction</div>

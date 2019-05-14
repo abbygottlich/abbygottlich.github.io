@@ -27,7 +27,7 @@ class App extends Component {
   }
 
   renderHome = () => {
-    return <Home hideHeaderFooter={this.hideHeaderFooter} />
+    return <Home hideHeaderFooter={this.hideHeaderFooter} headerFooterState={this.state.hideHeaderFooter} />
   }
 
   render() {
