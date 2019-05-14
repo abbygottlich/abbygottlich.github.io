@@ -11,33 +11,33 @@ import Footer from "./components/Footer";
 class App extends Component {
 
   state = {
-    hideHeader: false
+    hideHeaderFooter: false
   }
 
-  hideHeader = () => {
-    if (this.state.hideHeader === false) {
+  hideHeaderFooter = () => {
+    if (this.state.hideHeaderFooter === false) {
       this.setState({
-        hideHeader: true
+        hideHeaderFooter: true
       })
     } else {
       this.setState({
-        hideHeader: false
+        hideHeaderFooter: false
       })
     }
   }
 
   renderHome = () => {
-    return <Home hideHeader={this.hideHeader} />
+    return <Home hideHeaderFooter={this.hideHeaderFooter} />
   }
 
   render() {
     return (
       <BrowserRouter>
-        {this.state.hideHeader === false ? <Header /> : null}
+        {this.state.hideHeaderFooter === false ? <Header /> : null}
         <Route exact path="/" component={this.renderHome} />
         <Route path="/about" component={About} />
         <Route path="/contact" component={Contact} />
-        <Footer />
+        {this.state.hideHeaderFooter === false ? <Footer /> : null}
       </BrowserRouter>
     );
   }

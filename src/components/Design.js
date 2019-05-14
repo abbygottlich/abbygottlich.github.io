@@ -28,12 +28,12 @@ class Design extends Component {
             this.setState({
                 nakedTravelModalToggle: true
             })
-            this.props.hideHeaderNow()
+            this.props.hideHeaderFooter()
         } else {
             this.setState({
                 nakedTravelModalToggle: false
             })
-            this.props.hideHeaderNow()
+            this.props.hideHeaderFooter()
         }
     }
 
@@ -92,10 +92,12 @@ class Design extends Component {
             this.setState({
                 aviateModalToggle: true
             })
+            this.props.hideHeaderFooter()
         } else {
             this.setState({
                 aviateModalToggle: false
             })
+            this.props.hideHeaderFooter()
         }
     }
 
@@ -135,10 +137,12 @@ class Design extends Component {
             this.setState({
                 elmCreekToggle: true
             })
+            this.props.hideHeaderFooter()
         } else {
             this.setState({
                 elmCreekToggle: false
             })
+            this.props.hideHeaderFooter()
         }
     }
 
@@ -170,10 +174,12 @@ class Design extends Component {
             this.setState({
                 alexModalToggle: true
             })
+            this.props.hideHeaderFooter()
         } else {
             this.setState({
                 alexModalToggle: false
             })
+            this.props.hideHeaderFooter()
         }
     }
 
