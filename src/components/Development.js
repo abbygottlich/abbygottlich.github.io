@@ -32,7 +32,11 @@ class Development extends Component {
     }
 
     scrollDown() {
-        window.scroll({ top: 700, left: 0, behavior: 'smooth' })
+        if (window.innerWidth <= 375) {
+            window.scroll({ top: 600, left: 0, behavior: 'smooth' })
+        } else {
+            window.scroll({ top: 1500, left: 0, behavior: 'smooth' })
+        }
     }
 
     render() {
