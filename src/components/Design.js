@@ -188,8 +188,8 @@ class Design extends Component {
             return <div className="modal">
                 <div className="modal-content">
                     <div className="modal-header">
-                        <div className="project-name">Alex City Council</div>
-                        <div className="project-name">Campaign Website</div>
+                        <div className="project-name">Alex City Council Campaign</div>
+                        <div className="project-name"></div>
                         <div onClick={() => { this.alexModalToggle() }} className="x"></div>
                     </div>
                     <div className="project-images">
