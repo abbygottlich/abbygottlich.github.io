@@ -1,8 +1,4 @@
 /* ------------------------------ FOR IMAC ------------------------------ */
-body {
-  scroll-behavior: smooth;
-}
-
 .main {
     display: flex;
     height: 100vh;
