@@ -24,12 +24,12 @@ self.__precacheManifest = [
     "url": "/static/media/design-text.9f0c044a.png"
   },
   {
-    "revision": "71bbe57b7b6d89f36e4758c56e259637",
-    "url": "/static/media/naked-travel-cover.71bbe57b.png"
-  },
-  {
     "revision": "8080fec1f0e4efac292384f1228e3b9e",
     "url": "/static/media/background-small.8080fec1.jpg"
+  },
+  {
+    "revision": "71bbe57b7b6d89f36e4758c56e259637",
+    "url": "/static/media/naked-travel-cover.71bbe57b.png"
   },
   {
     "revision": "8f25e7db7c560ea0b60ff93a39e26336",
@@ -40,12 +40,12 @@ self.__precacheManifest = [
     "url": "/static/media/contact-small.c16a0d5c.jpg"
   },
   {
-    "revision": "ee98966cd8fa55ba293d6670895e6c4b",
-    "url": "/static/media/menu.ee98966c.svg"
-  },
-  {
     "revision": "e34e06009c3489879fc88dbc20951222",
     "url": "/static/media/logo.e34e0600.svg"
+  },
+  {
+    "revision": "ee98966cd8fa55ba293d6670895e6c4b",
+    "url": "/static/media/menu.ee98966c.svg"
   },
   {
     "revision": "084764e698b026317693578102046767",
@@ -300,7 +300,7 @@ self.__precacheManifest = [
     "url": "/static/media/alex-slide-6.83a9519d.jpg"
   },
   {
-    "revision": "dd5d5e6cfbcbe97f7db80637e02aa48f",
+    "revision": "4ffb58290b32f7680cf96e1b436eabd0",
     "url": "/index.html"
   }
 ];
